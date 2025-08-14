@@ -882,7 +882,7 @@
             return setmetatable(cfg, library)
         end 
 
-        local watermark = library:watermark({name = "priv9 - 100 fps - 100 ping"})
+        local watermark = library:watermark({name = "priv9.net alpha | fps: 100"})
         local fps = 0
         local watermark_delay = tick() 
 
@@ -892,7 +892,7 @@
             if tick() - watermark_delay > 1 then 
                 watermark_delay = tick()
                 local ping = math.floor(stats.PerformanceStats.Ping:GetValue()) .. "ms"                
-                watermark.update_text(string.format("priv9 - fps: %s - ping: %s", fps, ping))
+                watermark.update_text(string.format("priv9.net alpha | fps: %s", fps, ping))
                 fps = 0
             end
         end)
