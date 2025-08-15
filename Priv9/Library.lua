@@ -527,7 +527,7 @@
         function library:window(properties)
             local cfg = {
                 name = properties.name or properties.Name or "priv9",
-                size = properties.size or properties.Size or dim2(0, 550, 0, 300), 
+                size = properties.size or properties.Size or dim2(0, 300, 0, 400), 
                 selected_tab 
             }
 
